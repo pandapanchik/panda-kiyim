@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panda: oq va qora kiyimlar</title>
+  <meta name="description" content="Panda: Toshkentdagi klassik kiyimlar doʻkoni. Erkaklar, ayollar va bolalar uchun oq va qora rangdagi kiyimlar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Asosiy qismga oʻtish</a>
+
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Panda, bosh sahifa">Panda</a>
+    <nav class="site-nav" aria-label="Asosiy menyu">
+      <a href="kiyimlar.html">Kiyimlar</a>
+      <a href="#biz-haqimizda">Biz haqimizda</a>
+      <a href="#aloqa">Aloqa</a>
+    </nav>
+    <a class="header-cta" data-shop="telegram" data-shop-keep href="#">Telegram</a>
+    <button class="menu-toggle" type="button" aria-expanded="false">Menyu</button>
+  </header>
+
+  <main id="main">
+    <!-- Hero: 3D harflar va arka ichidagi model -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-stage" data-hero-stage>
+        <canvas aria-hidden="true"></canvas>
+        <h1 id="hero-title" class="hero-word">Panda</h1>
+        <figure class="hero-arch">
+          <img src="https://images.unsplash.com/photo-1777969381875-6332d207cc68?w=900&q=80&auto=format&fit=crop"
+               alt="Qora kostyumdagi erkak oq fonda turibdi" fetchpriority="high">
+        </figure>
+      </div>
+
+      <div class="hero-foot">
+        <div class="hero-intro">
+          <p class="hero-lead">Har kuni kiyiladigan klassika.</p>
+          <p class="hero-sub">Oq va qora rangdagi kostyum, palto va koʻylaklar. Doʻkonimizga keling yoki Telegram orqali buyurtma bering.</p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="kiyimlar.html">Kiyimlarni koʻrish</a>
+            <a class="link-line" href="#biz-haqimizda">Biz haqimizda</a>
+          </div>
+        </div>
+        <p class="hero-season">Kuz–qish 2026<br><span>Yangi kolleksiya doʻkonda</span></p>
+      </div>
+    </section>
+
+    <!-- Kategoriyalar -->
+    <section class="cats" aria-labelledby="cats-title">
+      <h2 id="cats-title" class="cats-title">Kim uchun kiyim izlayapsiz?</h2>
+      <div class="cats-list">
+        <a class="cat" href="kiyimlar.html?cat=erkak" data-tilt="8">
+          <span class="cat-img"><img src="https://images.unsplash.com/photo-1553209717-ddc5aa729bd2?w=600&q=75&auto=format&fit=crop" alt="" loading="lazy"></span>
+          <span class="cat-body">
+            <span class="cat-name">Erkaklar</span>
+            <span class="cat-text">Kostyum, palto, koʻylak va trikotaj.</span>
+            <span class="cat-link">Erkaklar kiyimlari</span>
+          </span>
+        </a>
+        <a class="cat" href="kiyimlar.html?cat=ayol" data-tilt="8">
+          <span class="cat-img"><img src="https://images.unsplash.com/photo-1616065297556-f05bc00c9a3e?w=600&q=75&auto=format&fit=crop" alt="" loading="lazy"></span>
+          <span class="cat-body">
+            <span class="cat-name">Ayollar</span>
+            <span class="cat-text">Uzun koʻylak, jaket va paltolar.</span>
+            <span class="cat-link">Ayollar kiyimlari</span>
+          </span>
+        </a>
+        <a class="cat" href="kiyimlar.html?cat=bola" data-tilt="8">
+          <span class="cat-img"><img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=600&q=75&auto=format&fit=crop" alt="" loading="lazy"></span>
+          <span class="cat-body">
+            <span class="cat-name">Bolalar</span>
+            <span class="cat-text">Bayram va har kunlik kiyimlar, 4–10 yosh.</span>
+            <span class="cat-link">Bolalar kiyimlari</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Biz haqimizda -->
+    <section class="about" id="biz-haqimizda" aria-labelledby="about-title">
+      <div class="about-head">
+        <h2 id="about-title" class="section-title">Biz haqimizda</h2>
+        <p class="about-lead">Panda oq va qora rangdagi kiyimlar doʻkoni. Biz faqat ikki rang bilan ishlaymiz: ular eskirmaydi va bir-biriga doim mos keladi.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo" data-tilt="6">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1000&q=75&auto=format&fit=crop" alt="Yogʻoch ilgichlardagi kiyimlar" loading="lazy">
+        </div>
+
+        <div class="about-body">
+          <p>Doʻkonimiz 2019-yilda Toshkentda kichik bir xonadan boshlangan. Bugun bizda erkaklar, ayollar va bolalar uchun kiyimlar bor. Har bir mahsulotni oʻzimiz tanlaymiz: matosini ushlab koʻramiz, chokini tekshiramiz, kiyib koʻramiz.</p>
+
+          <dl class="values">
+            <div class="value">
+              <dt>Toza mato</dt>
+              <dd>Paxta, jun va zigʻir. Sintetika faqat kerakli joyda ishlatiladi.</dd>
+            </div>
+            <div class="value">
+              <dt>Klassik bichim</dt>
+              <dd>Moda oʻtib ketadi, toʻgʻri bichilgan palto esa yillar davomida kiyiladi.</dd>
+            </div>
+            <div class="value">
+              <dt>Halol narx</dt>
+              <dd>Narxda faqat kiyimning oʻzi bor. Har bir mahsulotga ikki hafta ichida qaytarish kafolati beriladi.</dd>
+            </div>
+          </dl>
+
+          <div class="visit">
+            <h3 class="visit-title">Doʻkonga keling</h3>
+            <p><span data-shop="address"></span><br><span data-shop="hours"></span></p>
+            <a class="link-line" data-shop="phone" href="#"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Yangi kelganlar -->
+    <section class="arrivals" aria-labelledby="arrivals-title">
+      <div class="arrivals-head">
+        <h2 id="arrivals-title" class="section-title">Yangi kelganlar</h2>
+        <a class="link-line" href="kiyimlar.html">Barcha kiyimlar</a>
+      </div>
+      <div class="product-grid" data-new-arrivals></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="aloqa">
+    <div class="footer-cols">
+      <div>
+        <h2 class="footer-h">Doʻkon</h2>
+        <p><span data-shop="address"></span><br><span data-shop="hours"></span></p>
+      </div>
+      <div>
+        <h2 class="footer-h">Aloqa</h2>
+        <p>
+          <a data-shop="phone" href="#"></a><br>
+          Telegram: <a data-shop="telegram" href="#"></a><br>
+          Instagram: <a data-shop="instagram" href="#"></a>
+        </p>
+      </div>
+      <div>
+        <h2 class="footer-h">Sahifalar</h2>
+        <p><a href="index.html">Bosh sahifa</a><br><a href="kiyimlar.html">Kiyimlar</a><br><a href="index.html#biz-haqimizda">Biz haqimizda</a></p>
+      </div>
+    </div>
+    <p class="footer-word" aria-hidden="true">Panda</p>
+    <p class="footer-copy">© <span data-year></span> Panda. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <script type="module" src="js/common.js"></script>
+  <script type="module" src="js/home.js"></script>
+  <script type="module" src="js/hero3d.js"></script>
+</body>
+</html>

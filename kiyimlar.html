@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kiyimlar: Panda</title>
+  <meta name="description" content="Panda doʻkonidagi barcha kiyimlar: erkaklar, ayollar va bolalar uchun oq va qora rangdagi klassik kiyimlar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-catalog">
+  <a class="skip-link" href="#main">Asosiy qismga oʻtish</a>
+
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Panda, bosh sahifa">Panda</a>
+    <nav class="site-nav" aria-label="Asosiy menyu">
+      <a href="kiyimlar.html" aria-current="page">Kiyimlar</a>
+      <a href="index.html#biz-haqimizda">Biz haqimizda</a>
+      <a href="#aloqa">Aloqa</a>
+    </nav>
+    <a class="header-cta" data-shop="telegram" data-shop-keep href="#">Telegram</a>
+    <button class="menu-toggle" type="button" aria-expanded="false">Menyu</button>
+  </header>
+
+  <main id="main">
+    <!-- 3D aylanuvchi halqa -->
+    <section class="ring-hero" aria-labelledby="catalog-title">
+      <div class="ring-text">
+        <h1 id="catalog-title" class="catalog-title">Kiyimlar</h1>
+        <p class="ring-hint">Halqani suring yoki kiyimni bosing: oʻlcham va rangni tanlab, Telegram orqali buyurtma berasiz.</p>
+      </div>
+      <div class="ring" data-ring aria-label="Kiyimlar halqasi">
+        <div class="ring-track" data-ring-track></div>
+        <div class="ring-floor" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- Filtr va ro'yxat -->
+    <section class="catalog" aria-label="Kiyimlar roʻyxati">
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Kategoriya">
+          <button type="button" class="chip" data-filter="all" aria-pressed="true">Hammasi</button>
+          <button type="button" class="chip" data-filter="erkak" aria-pressed="false">Erkaklar</button>
+          <button type="button" class="chip" data-filter="ayol" aria-pressed="false">Ayollar</button>
+          <button type="button" class="chip" data-filter="bola" aria-pressed="false">Bolalar</button>
+        </div>
+        <label class="sort">
+          <span>Saralash</span>
+          <select data-sort>
+            <option value="default">Avval yangilari</option>
+            <option value="asc">Arzonidan qimmatiga</option>
+            <option value="desc">Qimmatidan arzoniga</option>
+          </select>
+        </label>
+      </div>
+      <p class="count" data-count aria-live="polite"></p>
+      <div class="product-grid" data-grid></div>
+    </section>
+  </main>
+
+  <!-- Mahsulot oynasi -->
+  <dialog class="product-dialog" data-dialog aria-labelledby="pd-name">
+    <button type="button" class="dialog-close" data-close aria-label="Yopish">Yopish</button>
+    <div class="pd">
+      <div class="pd-viewer">
+        <div class="pd-stage" data-stage>
+          <div class="pd-garment" data-garment>
+            <div class="pd-face pd-front"><img data-pd-img alt=""></div>
+            <div class="pd-face pd-back">
+              <span class="tag-logo">Panda</span>
+              <span class="tag-name" data-tag-name></span>
+              <span class="tag-row"><span>Tarkibi</span><span data-tag-fabric></span></span>
+              <span class="tag-row"><span>Parvarish</span><span data-tag-care></span></span>
+              <span class="tag-row"><span>Ishlab chiqarilgan</span><span>Oʻzbekiston</span></span>
+            </div>
+          </div>
+          <div class="pd-shadow" aria-hidden="true"></div>
+        </div>
+        <button type="button" class="pd-flip" data-flip>Yorligʻini koʻrish</button>
+      </div>
+
+      <div class="pd-info">
+        <p class="pd-cat" data-pd-cat></p>
+        <h2 id="pd-name" class="pd-name" data-pd-name></h2>
+        <p class="pd-price" data-pd-price></p>
+
+        <fieldset class="pd-field">
+          <legend>Rang: <span data-color-label></span></legend>
+          <div class="swatches" data-colors></div>
+        </fieldset>
+
+        <fieldset class="pd-field">
+          <legend>Oʻlcham</legend>
+          <div class="sizes" data-sizes></div>
+        </fieldset>
+
+        <a class="btn btn-dark btn-block is-disabled" data-order href="#" target="_blank" rel="noopener" aria-disabled="true">Oʻlchamni tanlang</a>
+        <p class="pd-note">Tugma Telegram'ni ochadi, xabarda kiyim, rang va oʻlcham yozilgan boʻladi. Toshkent boʻylab yetkazib berish 1–2 kun.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer" id="aloqa">
+    <div class="footer-cols">
+      <div>
+        <h2 class="footer-h">Doʻkon</h2>
+        <p><span data-shop="address"></span><br><span data-shop="hours"></span></p>
+      </div>
+      <div>
+        <h2 class="footer-h">Aloqa</h2>
+        <p>
+          <a data-shop="phone" href="#"></a><br>
+          Telegram: <a data-shop="telegram" href="#"></a><br>
+          Instagram: <a data-shop="instagram" href="#"></a>
+        </p>
+      </div>
+      <div>
+        <h2 class="footer-h">Sahifalar</h2>
+        <p><a href="index.html">Bosh sahifa</a><br><a href="kiyimlar.html">Kiyimlar</a><br><a href="index.html#biz-haqimizda">Biz haqimizda</a></p>
+      </div>
+    </div>
+    <p class="footer-word" aria-hidden="true">Panda</p>
+    <p class="footer-copy">© <span data-year></span> Panda. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <script type="module" src="js/common.js"></script>
+  <script type="module" src="js/catalog.js"></script>
+</body>
+</html>
